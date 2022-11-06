@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneContactList</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+                        
+                    <!-- Modal -->
+    <div class="contain-modal">
+        <div class="modal">
+            <div class="modal__content">
+                <div class="modal__header flex">
+                    <img class="modal__phone--img" src="./img/phone.svg" alt="phone">
+                    <span class="modal__text">Add Contact</span>
+                    <button class="modal__dagger btn"> <img class="dagger-img" src="./img/dagger.svg" alt="" srcset=""></button>
+                </div>
+                <div class="modal__form">
+                    <form action="#" class="modal__form">
+                        <div class="modal__name flex">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Vlad">
+                        </div>
+                        <div class="modal__phone flex">
+                            <label for="">Phone</label>
+                            <input id="phone" type="tel" placeholder="+7(905)456-55-65" data-phone-pattern>
+                        </div>
+                        <div class="modal__favorite">
+                            <input type="checkbox" id="checkbox"> Favorite
+                        </div>
+                        <button class="modal__add-btn">Создать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                            <!-- Contacts -->
+    <div class="container">
+        <div class="contact">
+            <header class="header">
+                <div class="header__name">Phone Book</div>
+            </header>
+            <div class="contact__about">
+                <div class="contact__search">
+                    <input type="search" class="search" placeholder="Search by name...">
+                </div>
+                <div class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__empty">
+                            <span>You have no contact. Add it!</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                <button class="footer__add-btn">Добавить</button>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
